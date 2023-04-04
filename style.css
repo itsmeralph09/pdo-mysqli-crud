@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  box-sizing: border-box;
+
+  --primary-color: #395b64;
+  --secondary-color: #212529;
+  --accent-1: #a5c9ca;
+  --neutral-1: white;
+}
+body {
+      background: linear-gradient(to bottom, #e65758, #771d32);
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+    }
+.container{
+	display: flex;
+  	flex-direction: column;
+  	gap: 16px;
+    border-radius: 5px;
+  	background-color: var(--neutral-1);
+  	width: 60vw;
+  	padding: 1rem;
+  	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.text-center{
+  margin-bottom: 2.5rem;
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.button-container a {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn{
+  background-color: var(--neutral-1);
+  margin-top: 2.5rem;
+  border: 2px solid var(--secondary-color);
+  box-shadow: 4px 4px 0px var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 2px;
+}
+.btn:hover{
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--neutral-1);
+  box-shadow: 6px 6px 0px var(--primary-color);
+
+}
